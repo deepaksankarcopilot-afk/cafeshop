@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Billing</h2>
+  <div class="row g-2 mb-3">
+    <div class="col-md-4">
+      <input type="text" class="form-control" #itemName placeholder="Item Name">
+    </div>
+    <div class="col-md-3">
+      <input type="number" class="form-control" #itemPrice placeholder="Price">
+    </div>
+    <div class="col-md-2">
+      <button (click)="addItem({name: itemName.value, price: itemPrice.valueAsNumber})" class="btn btn-primary w-100">Add Item</button>
+    </div>
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{ item.name }}</td>
+        <td>{{ item.price | currency }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="d-flex justify-content-between align-items-center mt-3">
+    <h4>Total: {{ totalAmount | currency }}</h4>
+    <button (click)="generateBill()" class="btn btn-success">Generate Bill</button>
+  </div>
+</div>

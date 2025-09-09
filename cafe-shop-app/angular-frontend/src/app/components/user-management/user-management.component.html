@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <h2 class="mb-4">User Management</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="mb-4">
+    <div class="row g-2">
+      <div class="col-md-4">
+        <input type="text" class="form-control" formControlName="username" placeholder="Username">
+      </div>
+      <div class="col-md-4">
+        <input type="password" class="form-control" formControlName="password" placeholder="Password">
+      </div>
+      <div class="col-md-3">
+        <select class="form-select" formControlName="role">
+          <option value="">Select Role</option>
+          <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+        </select>
+      </div>
+      <div class="col-md-1">
+        <button type="submit" class="btn btn-success w-100">Add</button>
+      </div>
+    </div>
+  </form>
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th>Username</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.username }}</td>
+        <td>{{ user.role }}</td>
+        <td>
+          <button (click)="deleteUser(user)" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

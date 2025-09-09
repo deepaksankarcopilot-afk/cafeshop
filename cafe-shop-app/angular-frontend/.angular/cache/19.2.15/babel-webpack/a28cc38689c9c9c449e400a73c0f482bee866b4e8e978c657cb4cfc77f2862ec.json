@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Bill {\n  constructor() {\n    this.items = [];\n    this.totalAmount = 0;\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

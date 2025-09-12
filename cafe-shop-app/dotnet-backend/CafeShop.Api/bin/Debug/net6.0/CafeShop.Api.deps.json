@@ -1269,7 +1269,10 @@
           "xunit.runner.visualstudio": "2.4.5"
         },
         "runtime": {
-          "CafeShop.Tests.dll": {}
+          "CafeShop.Tests.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

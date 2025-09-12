@@ -77,4 +77,10 @@
 /workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/CafeShop.Api.pdb
 /workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/CafeShop.Api.genruntimeconfig.cache
 /workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/ref/CafeShop.Api.dll
-/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/CafeShop.Api.csproj.CopyComplete
+/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/CafeShop.Api.sourcelink.json
+/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/staticwebassets/msbuild.CafeShop.Api.Microsoft.AspNetCore.StaticWebAssets.props
+/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/staticwebassets/msbuild.build.CafeShop.Api.props
+/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.CafeShop.Api.props
+/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.CafeShop.Api.props
+/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/staticwebassets.pack.json
+/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/Debug/net6.0/CafeShop.4D38AB1E.Up2Date

@@ -24,7 +24,7 @@ export class LoginComponent {
   }
 
   get f() {
-    return this.loginForm.controls;
+    return this.loginForm.controls as { [key: string]: any };
   }
 
   onSubmit() {
@@ -35,11 +35,11 @@ export class LoginComponent {
       return;
     }
 
-    this.authService.login(this.f.username.value, this.f.password.value).subscribe({
+  this.authService.login(this.f['username'].value, this.f['password'].value).subscribe({
       next: () => {
         // Handle successful login
       },
-      error: (error) => {
+      error: (error: any) => {
         this.errorMessage = error;
       }
     });

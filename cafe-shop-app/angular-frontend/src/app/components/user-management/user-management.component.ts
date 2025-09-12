@@ -1,3 +1,4 @@
+// ...existing code...
 import { User, Role } from '../../app-models';
 import { UserService } from '../../services/user.service';
 import { RoleService } from '../../services/role.service';
@@ -50,6 +51,13 @@ export class UserManagementComponent {
         this.loadUsers();
         this.userForm.reset();
       });
+    }
+  }
+
+  deleteUser(user: any): void {
+    // TODO: Implement user deletion logic
+    if (this.users) {
+      this.users = this.users.filter((u: any) => u !== user);
     }
   }
 }

@@ -29,7 +29,7 @@ export class BillingComponent {
   generateBill() {
     this.bill.items = this.items;
     this.bill.totalAmount = this.totalAmount;
-    this.billingService.createBill(this.bill).subscribe(response => {
+  this.billingService.createBill(this.bill).subscribe((response: any) => {
       console.log('Bill generated successfully', response);
       this.resetBilling();
     });

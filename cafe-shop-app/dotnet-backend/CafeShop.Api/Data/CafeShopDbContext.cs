@@ -15,6 +15,7 @@ namespace CafeShop.Api.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configure entity relationships and constraints here
+            // (Seeding removed as per user request to not seed in code)
         }
     }
 }

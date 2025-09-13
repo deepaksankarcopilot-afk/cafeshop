@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9CUcm8KczqA=",
+  "dgSpecHash": "YG6qPmJUIW4=",
   "success": true,
   "projectFilePath": "/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Tests/CafeShop.Tests.csproj",
   "expectedPackageFiles": [
@@ -90,9 +90,7 @@
     "/home/codespace/.nuget/packages/xunit.core/2.4.1/xunit.core.2.4.1.nupkg.sha512",
     "/home/codespace/.nuget/packages/xunit.extensibility.core/2.4.1/xunit.extensibility.core.2.4.1.nupkg.sha512",
     "/home/codespace/.nuget/packages/xunit.extensibility.execution/2.4.1/xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "/home/codespace/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+    "/home/codespace/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
   "logs": []
 }

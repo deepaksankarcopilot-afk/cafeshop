@@ -61,4 +61,10 @@ export class RoleManagementComponent implements OnInit {
   cancelEdit() {
     this.editRole = null;
   }
+    removeRole(role: any) {
+      const idx = this.roles.indexOf(role);
+      if (idx > -1) {
+        this.roles.splice(idx, 1);
+      }
+    }
 }

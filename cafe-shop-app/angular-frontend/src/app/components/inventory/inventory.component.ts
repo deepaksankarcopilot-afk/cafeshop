@@ -60,4 +60,10 @@ export class InventoryComponent implements OnInit {
   cancelEdit() {
     this.editItem = null;
   }
+
+    removeItem(index: number) {
+      if (index > -1 && index < this.inventoryItems.length) {
+        this.inventoryItems.splice(index, 1);
+      }
+    }
 }

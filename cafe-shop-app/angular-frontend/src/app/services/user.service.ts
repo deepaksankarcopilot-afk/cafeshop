@@ -5,6 +5,13 @@ import { environment } from '../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
+  getUsers(): Observable<any[]> {
+    return this.getAll();
+  }
+
+  createUser(user: any): Observable<any> {
+    return this.create(user);
+  }
   private apiUrl = environment.apiUrl + '/api/users';
 
   constructor(private http: HttpClient) {}

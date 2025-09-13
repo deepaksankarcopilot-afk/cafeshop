@@ -6,6 +6,9 @@ import { environment } from '../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class RoleService {
+  getRoles(): Observable<any[]> {
+    return this.getAll();
+  }
   private apiUrl = environment.apiUrl + '/api/roles';
 
   constructor(private http: HttpClient) {}

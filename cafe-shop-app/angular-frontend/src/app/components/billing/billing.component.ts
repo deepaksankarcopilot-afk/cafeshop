@@ -66,4 +66,17 @@ export class BillingComponent implements OnInit {
     this.totalAmount = 0;
     this.bill = new Bill();
   }
+
+    addItem(item: { name: string; price: number }) {
+      if (item && item.name && item.price) {
+        this.items.push(item);
+        this.totalAmount += item.price;
+      }
+    }
+
+    generateBill() {
+      this.bill.items = this.items;
+      this.bill.totalAmount = this.totalAmount;
+      this.addBill();
+    }
 }

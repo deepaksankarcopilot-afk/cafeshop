@@ -44,9 +44,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseRouting();
 app.UseCors();
-
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection(); // Disabled for local dev to avoid CORS/HTTPS issues
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

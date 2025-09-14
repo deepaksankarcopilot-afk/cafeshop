@@ -5458,19 +5458,19 @@
     ]
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "C:\\Users\\SMVT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/CafeShop.Api.csproj",
+      "projectUniqueName": "E:\\cafeshop\\cafeshop\\cafe-shop-app\\dotnet-backend\\CafeShop.Api\\CafeShop.Api.csproj",
       "projectName": "CafeShop.Api",
-      "projectPath": "/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/CafeShop.Api.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Api/obj/",
+      "projectPath": "E:\\cafeshop\\cafeshop\\cafe-shop-app\\dotnet-backend\\CafeShop.Api\\CafeShop.Api.csproj",
+      "packagesPath": "C:\\Users\\SMVT\\.nuget\\packages\\",
+      "outputPath": "E:\\cafeshop\\cafeshop\\cafe-shop-app\\dotnet-backend\\CafeShop.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\SMVT\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -5482,8 +5482,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Tests/CafeShop.Tests.csproj": {
-              "projectPath": "/workspaces/cafeshop/cafe-shop-app/dotnet-backend/CafeShop.Tests/CafeShop.Tests.csproj"
+            "E:\\cafeshop\\cafeshop\\cafe-shop-app\\dotnet-backend\\CafeShop.Tests\\CafeShop.Tests.csproj": {
+              "projectPath": "E:\\cafeshop\\cafeshop\\cafe-shop-app\\dotnet-backend\\CafeShop.Tests\\CafeShop.Tests.csproj"
             }
           }
         }
@@ -5497,7 +5497,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -5543,6 +5544,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5551,7 +5570,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

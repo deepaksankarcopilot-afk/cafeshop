@@ -1,5 +1,7 @@
 
 
+
+
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -14,8 +16,17 @@ import { RoleService } from '../../services/role.service';
   imports: [CommonModule, FormsModule]
 })
 export class RoleManagementComponent implements OnInit {
+  edit(role: any) {
+    this.editRole = { ...role, screens: Array.isArray(role.screens) ? [...role.screens] : [] };
+  }
   roles: any[] = [];
-  newRole: any = { name: '' };
+  availableScreens: string[] = [
+    'user-management',
+    'role-management',
+    'inventory',
+    'billing'
+  ];
+  newRole: any = { name: '', screens: [] };
   editRole: any = null;
 
   constructor(
@@ -31,15 +42,12 @@ export class RoleManagementComponent implements OnInit {
 
   addRole() {
     if (this.newRole.name) {
+      // Save selected screens with the role
       this.roleService.create(this.newRole).subscribe((role) => {
         this.roles.push(role);
-        this.newRole = { name: '' };
+        this.newRole = { name: '', screens: [] };
       });
     }
-  }
-
-  edit(role: any) {
-    this.editRole = { ...role };
   }
 
   updateRole() {
@@ -61,10 +69,34 @@ export class RoleManagementComponent implements OnInit {
   cancelEdit() {
     this.editRole = null;
   }
-    removeRole(role: any) {
-      const idx = this.roles.indexOf(role);
-      if (idx > -1) {
-        this.roles.splice(idx, 1);
-      }
+
+  removeRole(role: any) {
+    const idx = this.roles.indexOf(role);
+    if (idx > -1) {
+      this.roles.splice(idx, 1);
     }
+  }
+
+  // Add handler for checkbox changes
+  onScreenToggle(screen: string, event: any) {
+    if (event?.target?.checked) {
+      if (!this.newRole.screens.includes(screen)) {
+        this.newRole.screens.push(screen);
+      }
+    } else {
+      this.newRole.screens = this.newRole.screens.filter((s: string) => s !== screen);
+    }
+  }
+
+  // Handler for edit screen checkboxes
+  onEditScreenToggle(screen: string, event: any) {
+    if (!this.editRole || !this.editRole.screens) return;
+    if (event?.target?.checked) {
+      if (!this.editRole.screens.includes(screen)) {
+        this.editRole.screens.push(screen);
+      }
+    } else {
+      this.editRole.screens = this.editRole.screens.filter((s: string) => s !== screen);
+    }
+  }
 }
